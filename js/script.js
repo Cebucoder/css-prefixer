@@ -98,6 +98,10 @@ document.getElementById('copy_clipCss').addEventListener('click', function() {
     
 });
 
+document.getElementById('close_info').addEventListener('click', function(){
+    document.getElementById('info').remove();
+});
+
 
 
   

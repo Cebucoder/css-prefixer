@@ -22,6 +22,34 @@ h1,h2,h3,h4,h5,h6{
     background: rgb(253,29,29);
     background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
 }
+.info{
+    background: #ff0050;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.info_text{
+    width: 100%;
+    min-height: 90px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    font-size: 14px;
+}
+.info h2{
+    text-align: center;
+    font-size: 18px;
+}
+.info span{
+    position: absolute;
+    right: 30px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
 .wrapper{
     max-width: 1080px;
     width: 100%;

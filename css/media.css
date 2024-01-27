@@ -36,6 +36,9 @@ and (max-width : 800px){
     .about_prefixer figure{
         display: none;
     }
+    .info h2{
+        font-size: 14px;
+    }
 }
 
 @media only screen
