@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Prefixer | Cebucoder</title>
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
+</head>
+<body>
+
+    <div class="main_con">
+        <div class="wrapper">
+            <header>
+                <div class="header_con">
+                    <div class="git_hub_btn">
+                        <span><ion-icon name="logo-github"></ion-icon></span>
+                        <h2>Cebucoder</h2>
+                    </div>
+                    <div class="share_me" id="share_me">
+                        <span><ion-icon name="share-social-outline"></ion-icon></span>
+                        <h2>Share me</h2>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- share me popup -->
+        <div class="share_me_pop" id="share_me_pop">
+            <div class="share_popup_con">
+                <span class="close_popup" id="close_popup">
+                    <ion-icon name="close-outline"></ion-icon>
+                </span>
+                <div class="share_header">
+                    <h2>Love Our Website?</h2>
+                    <p>Help us grow by sharing it with your friends and followers on social media!</p>
+                </div>
+                <div class="social_cat">
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                    <span><ion-icon name="logo-instagram"></ion-icon></span>
+                    <span><ion-icon name="logo-tiktok"></ion-icon></span>
+                </div>
+
+                <div class="link_cont">
+                    <input type="text" readonly id="url">
+                    <span class="copy_me" id="copy_me"><ion-icon name="clipboard-outline"></ion-icon></span>
+                </div>
+                <h2 id="copy_success">Successfully copied!</h2>
+            </div>
+        </div>
+        <!-- share me popup -->
+
+        <div class="head_title">
+            <div class="wrapper">
+                <h1 class="main_title">CSS Prefixer</h1>
+                <p>Cross-Browser Harmony!</p>
+            </div>
+        </div>
+
+        <div class="css_cont_pref">
+            <div class="wrapper">
+                <div class="textarea_con">
+                    <div class="texarea_header">
+                        <span>Paste your css here</span>
+                    </div>
+                    <textarea name="" id="input" placeholder="Paste your css style here..." oninput="prefixCSS()"></textarea>
+                </div>
+                <div class="textarea_con">
+                    <div class="texarea_header">
+                        <span id="temp_cop">Prefix Output</span>
+                    </div>
+                    <span class="copy_clip" id="copy_clipCss"><ion-icon name="clipboard-outline"></ion-icon></span>
+                    <textarea name="" id="output" placeholder="Prefix css result here..."></textarea>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- What is Css prefixer -->
+        <div class="about_prefixer">
+            <div class="wrapper">
+                <div class="prefix_det">
+                    <figure>
+                        <img src="image/Mobile browsers-bro.png" alt="astrunaut sorond by browsers">
+                    </figure>
+                    <div class="prefix_text">
+                        <h2>What is CSS Prefixing</h2>
+                        <p>
+                            CSS prefixing involves adding vendor-specific prefixes to CSS properties to ensure compatibility with different web browsers. This is done because browsers may implement certain CSS features with different prefixes, especially when new features are introduced and not yet standardized.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prefix_det reverse">
+                    <figure>
+                        <img src="image/Shared goals-cuate.png" alt="astrunaut sorond by browsers">
+                    </figure>
+                    <div class="prefix_text">
+                        <h2>Main goal of CSS Prefixing</h2>
+                        <p>
+                            The main goal of CSS prefixing is to make sure that a CSS feature works consistently across different browsers, even if they have different ways of implementing it. It helps developers handle browser-specific implementations and experimental features that haven't been officially standardized by the W3C (World Wide Web Consortium).
+                        </p>
+                    </div>
+                </div>
+
+    
+                
+            </div>
+        </div>
+
+        <footer>
+        <div class="footer_con">
+            <div class="wrapper">
+                &copy;All Right Reserved 2024 - <span id="cyear">YYYY</span> | Created by <a href="">Cebucoder</a>
+                <script>
+                    const d = new Date();
+                    let year = d.getFullYear();
+                    document.getElementById("cyear").innerHTML = year;
+                </script>
+            </div>
+        </div>
+
+        </footer>
+
+
+        <div class="custom-shape-divider-bottom-1706258909">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </div>
+    
+</body>
+<script src="js/script.min.js"></script>
+<!-- <script src="js/vstheme.min.js"></script> -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
