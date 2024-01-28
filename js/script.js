@@ -1,5 +1,12 @@
+    var infoMessageClosed = localStorage.getItem('infoMessageClosed');
+    if (infoMessageClosed == 'true') {
+        document.getElementById('info').style.display = 'none';
+    }
+    document.getElementById('close_info').addEventListener('click', function() {
+        document.getElementById('info').style.display = 'block';
+        localStorage.setItem('infoMessageClosed', 'true');
+    });
 
-  
 
 function prefixCSS() {
     // Get the input CSS code
@@ -101,6 +108,10 @@ document.getElementById('copy_clipCss').addEventListener('click', function() {
 document.getElementById('close_info').addEventListener('click', function(){
     document.getElementById('info').remove();
 });
+
+
+
+
 
 
 
