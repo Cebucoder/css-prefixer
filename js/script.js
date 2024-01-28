@@ -15,7 +15,9 @@ function prefixCSS() {
 
     // Add vendor prefix for 'transform'
     const prefixedCode = inputCode
-    .replace(/transform:/g, '-webkit-transform:').replace(/@keyframes/g, '@-webkit-keyframes')
+    .replace(/transform:/g, '-webkit-transform:')
+    .replace(/@keyframes/g, '@-webkit-keyframes')
+    .replace(/animation-name/g, '-webkit-animation-name:');
 
 
 
