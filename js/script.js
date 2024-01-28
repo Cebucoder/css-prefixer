@@ -17,7 +17,7 @@ function prefixCSS() {
     const prefixedCode = inputCode
     .replace(/transform:/g, '-webkit-transform:')
     .replace(/@keyframes/g, '@-webkit-keyframes')
-    .replace(/animation-name/g, '-webkit-animation-name:');
+    .replace(/animation-name/g, '-webkit-animation-name');
 
 
 
